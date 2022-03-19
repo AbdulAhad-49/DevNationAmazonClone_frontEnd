@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200;300;400&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+   
+    
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- Header Section -->
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+          <a class="navbar-brand pt-2" href="#" id="nav-top"><img src="../img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="nav-fill col-5 col-md-6 col-lg-6 col-xl-7">
+                <div id="nav-search">
+            <form>
+                <div class="nav-left">
+                  <span class="nav-search-label">All</span>
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  <select id="nav-search-select">
+                    <option selected="selected" value="aps">All Departments</option>
+                    <option value="alexa-skills">Alexa Skills</option>
+                    <option value="instant-video">Amazon Video</option>
+                    <option value="warehouse-deals">Amazon Warehouse Deals</option>
+                    <option value="appliances">Appliances</option>
+                    <option value="mobile-apps">Apps &amp; Games</option>
+                    <option value="arts-crafts">Arts, Crafts &amp; Sewing</option>
+                    <option value="automotive">Automotive Parts &amp; Accessories</option>
+                    <option value="baby-products">Baby</option>
+                    <option value="beauty">Beauty &amp; Personal Care</option>
+                    <option value="stripbooks">Books</option>
+                    <option value="popular">CDs &amp; Vinyl</option>
+                    <option value="mobile">Cell Phones &amp; Accessories</option>
+                    <option value="fashion">Clothing, Shoes &amp; Jewelry</option>
+                    <option value="fashion-womens">&nbsp;&nbsp;&nbsp;Women</option>
+                    <option value="fashion-mens">&nbsp;&nbsp;&nbsp;Men</option>
+                    <option value="fashion-girls">&nbsp;&nbsp;&nbsp;Girls</option>
+                    <option value="fashion-boys">&nbsp;&nbsp;&nbsp;Boys</option>
+                    <option value="fashion-baby">&nbsp;&nbsp;&nbsp;Baby</option>
+                    <option value="collectibles">Collectibles &amp; Fine Art</option>
+                    <option value="computers">Computers</option>
+                    <option value="courses">Courses</option>
+                    <option value="financial">Credit and Payment Cards</option>
+                    <option value="digital-music">Digital Music</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="gift-cards">Gift Cards</option>
+                    <option value="grocery">Grocery &amp; Gourmet Food</option>
+                    <option value="handmade">Handmade</option>
+                    <option value="hpc">Health, Household &amp; Baby Care</option>
+                    <option value="local-services">Home &amp; Business Services</option>
+                    <option value="garden">Home &amp; Kitchen</option>
+                    <option value="industrial">Industrial &amp; Scientific</option>
+                    <option value="digital-text">Kindle Store</option>
+                    <option value="fashion-luggage">Luggage &amp; Travel Gear</option>
+                    <option value="luxury-beauty">Luxury Beauty</option>
+                    <option value="magazines">Magazine Subscriptions</option>
+                    <option value="movies-tv">Movies &amp; TV</option>
+                    <option value="mi">Musical Instruments</option>
+                    <option value="office-products">Office Products</option>
+                    <option value="lawngarden">Patio, Lawn &amp; Garden</option>
+                    <option value="pets">Pet Supplies</option>
+                    <option value="prime-exclusive">Prime Exclusive</option>
+                    <option value="pantry">Prime Pantry</option>
+                    <option value="software">Software</option>
+                    <option value="sporting">Sports &amp; Outdoors</option>
+                    <option value="tools">Tools &amp; Home Improvement</option>
+                    <option value="toys-and-games">Toys &amp; Games</option>
+                    <option value="vehicles">Vehicles</option>
+                    <option value="videogames">Video Games</option>
+                    <option value="wine">Wine</option>
+                  </select>
+                </div>
+                <div class="nav-right">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                  <input type="submit">
+                </div>
+                <div class="nav-fill">
+                  <input type="text" autocomplete="off">
+                </div>
+              </form>
+            </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+               
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     <span>Hello,Sign In</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">Return & Orders</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white nav-a cart" href="#" tabindex="-1" aria-disabled="true">  <span>0</span>
+          Cart</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+   
+      <!-- Carousel Section -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide_1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide_2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide_3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide_4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide_5.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="main_container">
+      <div clsss="container m-auto">
+        <div class="row mt-3 ml-3 mr-3">
+          <div class="col-6 col-md-3 col-lg-3 col-xl-3 mb-2 mb-xl-4 card_width ">
+        <div class="card " style="width: 18rem;">
+            <img src="img/product_1.jpg" class="card-img-top card_image_main" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <a href="#" class="btn btn-primary">Add To Cart</a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3  col-lg-3 col-xl-3 mb-2 mb-xl-4">
+          <div class="card " style="width: 18rem;">
+              <img src="img/product_2.jpg" class="card-img-top card_image_main" alt="...">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3 col-xl-3 mb-2 mb-xl-4">
+            <div class="card " style="width: 18rem;">
+                <img src="img/product_1.jpg" class="card-img-top card_image_main" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 col-xl-3 mb-2 mb-xl-4">
+              <div class="card " style="width: 18rem;">
+                  <img src="img/product_2.jpg" class="card-img-top card_image_main" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 col-lg-3 col-xl-3 mb-2 mb-xl-4">
+                <div class="card " style="width: 18rem;">
+                    <img src="img/product_3.jpg" class="card-img-top card_image_main" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 col-xl-3 mb-2 mb-xl-4">
+                  <div class="card " style="width: 18rem;">
+                      <img src="img/product_4.jpg" class="card-img-top card_image_main" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 col-lg-3 col-xl-3 mb-2 mb-xl-4">
+                    <div class="card " style="width: 18rem;">
+                        <img src="img/product_5.jpg" class="card-img-top card_image_main" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-3 col-xl-3 mb-2 mb-xl-4">
+                      <div class="card " style="width: 18rem;">
+                          <img src="img/product_6.jpg" class="card-img-top card_image_main" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                          <a href="#" class="btn btn-primary">Add To Cart</a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-3 col-lg-3 col-xl-3 mb-2 mb-xl-4">
+                        <div class="card " style="width: 18rem;">
+                            <img src="img/product_2.jpg" class="card-img-top card_image_main" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">Add To Cart</a>
+                          </div>
+                        </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="top text-center">
+        <a href="#nav-top" >Back to top</a>
+      </div>
+  
+      <div class="middle">
+        <div class="center">
+          <ul>
+            <li><h3>Get to Know Us</h3></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About Amazon</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Amazon Devices</a></li>
+          </ul>
+          <ul>
+            <li><h3>Make Money with Us</h3></li>
+            <li><a href="#">Sell on Amazon</a></li>
+            <li><a href="#">Sell Your Services on Amazon</a></li>
+            <li><a href="#">Sell on Amazon Business</a></li>
+            <li><a href="#">Sell Your Apps on Amazon</a></li>
+            <li><a href="#">Become an Affiliate</a></li>
+            <li><a href="#">Advertise Your Products</a></li>
+            <li><a href="#">Self-Publish with Us</a></li>
+            <li><a href="#">Become an Amazon Vendor</a></li>
+            <li><a href="#">Sell Your Subscription on Amazon</a></li>
+            <li><a href="#"> See all</a></li>
+          </ul>
+          <ul>
+            <li><h3>Amazon Payment Products</h3></li>
+            <li><a href="#">Amazon Rewards Visa Signature Cards</a></li>
+            <li><a href="#">Amazon.com Store Card</a></li>
+            <li><a href="#">Amazon.com Corporate Credit Line</a></li>
+            <li><a href="#">Shop with Points</a></li>
+            <li><a href="#">Credit Card Marketplace</a></li>
+            <li><a href="#">Reload Your Balance</a></li>
+            <li><a href="#">Amazon Currency Converter</a></li>
+          </ul>
+          <ul>
+            <li><h3>Let Us Help You</h3></li>
+            <li><a href="#">Your Account</a></li>
+            <li><a href="#">Your Orders</a></li>
+            <li><a href="#">Shipping Rates &amp; Policies</a></li>
+            <li><a href="#">Amazon Prime</a></li>
+            <li><a href="#">Returns &amp; Replacements</a></li>
+            <li><a href="#">Manage Your Content and Devices</a></li>
+            <li><a href="#">Amazon Assistant</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+  
+        <ul class="copy text-center">
+          <li><a href="#" class="logo"></a></li>
+          <li><a href="#" class="select"><i class="fa fa-globe" aria-hidden="true"></i> English</a></li>
+          <li><a href="#" class="select"><i class="flag-icon-us"></i>United States</a></li>
+        </ul>
+      </div>
+  
+      <div class="bottom">
+        <div class="center">
+          <ul>
+            <li><a href="#">Amazon Music<br/><span>Stream millions<br> of songs</span></a></li>
+            <li><a href="#">AmazonFresh<br/><span>Groceries &amp; More<br> Right To Your Door</span></a></li>
+            <li><a href="#">Amazon Web Services<br/><span>Scalable Cloud<br> Computing Services</span></a></li>
+            <li><a href="#">East Dane<br/><span>Designer Men's<br> Fashion</span></a></li>
+            <li><a href="#">Prime Now<br/><span>FREE 2-Hour Delivery<br> on Everyday Items</span></a></li>
+          </ul>
+  
+          <ul>
+            <li><a href="#">Amazon Drive<br/><span>Cloud storage<br> from Amazon</span></a></li>
+            <li><a href="#">AmazonGlobal<br/><span>Ship Orders<br> Internationally</span></a></li>
+            <li><a href="#">Audible<br/><span>Download<br> Audio Books</span></a></li>
+            <li><a href="#">Fabric<br/><span>Sewing, Quilting<br> &amp; Knitting</span></a></li>
+            <li><a href="#">Prime Photos<br/><span>Unlimited Photo Storage<br> Free With Prime</span></a></li>
+            <li><a href="#">Woot!<br/><span>Deals and <br> Shenanigans</span></a></li>
+          </ul>
+  
+          <ul>
+            <li><a href="#">6pm<br/><span>Score deals<br> on fashion brands</span></a></li>
+            <li><a href="#">Home Services<br/><span>Handpicked Pros<br> Happiness Guarantee</span></a></li>
+            <li><a href="#">Book Depository<br/><span>Books With Free<br> Delivery Worldwide</span></a></li>
+            <li><a href="#">Goodreads<br/><span>Book reviews<br> &amp; recommendations</span></a></li>
+            <li><a href="#">Shopbop<br/><span>Designer<br> Fashion Brands</span></a></li>
+            <li><a href="#">Zappos<br/><span>Shoes &amp;<br> Clothing</span></a></li>
+          </ul>
+  
+          <ul>
+            <li><a href="#">AbeBooks<br/><span>Books, art<br> &amp; collectibles</span></a></li>
+            <li><a href="#">Amazon Inspire<br/><span>Free Digital Educational<br>  Resources</span></a></li>
+            <li><a href="#">Box Office Mojo<br/><span>Find Movie<br> Box Office Data</span></a></li>
+            <li><a href="#">IMDb<br/><span>Movies, TV<br> &amp; Celebrities</span></a></li>
+            <li><a href="#">TenMarks.com<br/><span>Math Activities<br> for Kids &amp; Schools</span></a></li>
+            <li><a href="#">Souq.com<br/><span>Shop Online in<br> the Middle East</span></a></li>
+          </ul>
+  
+          <ul>
+            <li><a href="#">ACX <br/><span>Audiobook Publishing<br> Made Easy</span></a></li>
+            <li><a href="#">Amazon Rapids<br/><span>Fun stories for<br>  kids on the go</span></a></li>
+            <li><a href="#">ComiXology<br/><span>Thousands of<br> Digital Comics</span></a></li>
+            <li><a href="#">IMDbPro<br/><span>Get Info Entertainment<br> Professionals Need</span></a></li>
+            <li><a href="#">Warehouse Deals<br/><span>Open-Box<br> Discounts</span></a></li>
+            <li><a href="#">Subscribe with Amazon<br/><span>Discover &amp; try<br> subscription services</span></a></li>
+          </ul>
+  
+          <ul>
+            <li><a href="#">Alexa<br/><span>Actionable Analytics<br> for the Web</span></a></li>
+            <li><a href="#">Amazon Restaurants<br/><span>Food delivery from<br> local restaurants</span></a></li>
+            <li><a href="#">CreateSpace<br/><span>Indie Print Publishing<br> Made Easy</span></a></li>
+            <li><a href="#">Junglee.com<br/><span>Shop Online<br> in India</span></a></li>
+            <li><a href="#">Whispercast<br/><span>Discover &amp; Distribute<br> Digital Content</span></a></li>
+          </ul>
+  
+          <ul>
+            <li><a href="#">Amazon Business<br/><span>Everything For<br> Your Business</span></a></li>
+            <li><a href="#">Amazon Video Direct<br/><span>Video Distribution<br> Made Easy</span></a></li>
+            <li><a href="#">DPReview<br/><span>Digital<br> Photography</span></a></li>
+            <li><a href="#">Kindle Direct Publishing<br/><span>Indie Digital Publishing<br> Made Easy</span></a></li>
+            <li><a href="#">Withoutabox<br/><span>Submit to<br> Film Festivals</span></a></li>
+          </ul>
+  
+          <ul class="copy text-center">
+            <li><a href="#">Conditions of Use</a></li>
+            <li><a href="#">Privacy Notice</a></li>
+            <li><a href="#">Interest-Based Ads</a></li>
+            <li>&copy; 1996-2017, Amazon.com, Inc. or its affiliates</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  
+      <!-- Header Section END Points -->
+      <script src="https://kit.fontawesome.com/cf54d40f98.js" crossorigin="anonymous"></script>
+
+      <!-- font Awesome -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
